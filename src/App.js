@@ -1,27 +1,17 @@
-import logo from './logo.png';
 import './App.css';
+import Header from './Header.js';
+import Main from './Main.js';
+import Score from './Score.js';
+import Footer from './Footer.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <nav>
-          <ul>
-            <li>About</li>
-            <li><img src={logo} className="App-logo" alt="logo" />
-            </li>
-          </ul>
-        </nav>
-  </header>
-      
-      <main className="mainContent">
+      <Header />
+      <Score value="10" />      
+      <Main />
 
-        <section className="forms">
-          Forms
-         </section>
-        
-    </main>
-
+      <Footer />
     </div>
   );
 }
