@@ -1,39 +1,23 @@
 //Form.js
-import React, { Component } from 'react';
-import allForms from './allForms.js';
 
-class Form extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { 
-            formLabel: "",
-        };
-    }
-    render() {
-        
-        return (
-            <section className="forms wrapper">
-                {allForms.map((form) => {
-                    this.state.formLabel = form.label;
-                    return (
-                        <form>
-                            <p><label for={form.label} className="formLabel">{form.name}</label>
-                            </p>
-                            {form.options.map((option) => {
-                                return (
-                                    <fragment>
-                                        <input type="radio" name={this.state.formLabel} value={option.value} />
-                                        <label for={option.value}>{option.name}</label><br></br>
-                                    </fragment>
-                                )
-                            })
-                            }
-                        </form>
-                    )
-                })}
-            </section>
-        );
-    }
+const Form = (props) => {
+    return (
+        <form>
+            <p><label htmlFor={props.label} className="formLabel">{props.name}</label>
+            </p>
+            {props.form.options.map((option) => {
+                return (
+                    <fragment>
+                        <input type="radio" name={props.label}
+                            value={option.value}
+                            />
+                        <label htmlFor={option.value}>{option.name}</label><br></br>
+                    </fragment>
+                )
+            })
+            }
+        </form>
+    )
 }
 
 export default Form;

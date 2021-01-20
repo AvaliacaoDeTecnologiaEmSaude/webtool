@@ -1,12 +1,12 @@
 //Main.js
-import Form from './Form.js';
+import Forms from './Forms.js';
 
 const Main = () => {
     return (
     
     <main className="mainContent">
 
-        <Form />
+        <Forms />
 
     </main>
     )
