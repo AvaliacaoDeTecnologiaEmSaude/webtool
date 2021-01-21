@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/webtool/static/css/main.227a3cc3.chunk.css",
-    "main.js": "/webtool/static/js/main.ac74e4cc.chunk.js",
-    "main.js.map": "/webtool/static/js/main.ac74e4cc.chunk.js.map",
+    "main.css": "/webtool/static/css/main.10e7f106.chunk.css",
+    "main.js": "/webtool/static/js/main.8e8f691d.chunk.js",
+    "main.js.map": "/webtool/static/js/main.8e8f691d.chunk.js.map",
     "runtime-main.js": "/webtool/static/js/runtime-main.ddf50861.js",
     "runtime-main.js.map": "/webtool/static/js/runtime-main.ddf50861.js.map",
     "static/js/2.daead919.chunk.js": "/webtool/static/js/2.daead919.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.b368427d.chunk.js": "/webtool/static/js/3.b368427d.chunk.js",
     "static/js/3.b368427d.chunk.js.map": "/webtool/static/js/3.b368427d.chunk.js.map",
     "index.html": "/webtool/index.html",
-    "static/css/main.227a3cc3.chunk.css.map": "/webtool/static/css/main.227a3cc3.chunk.css.map",
+    "static/css/main.10e7f106.chunk.css.map": "/webtool/static/css/main.10e7f106.chunk.css.map",
     "static/js/2.daead919.chunk.js.LICENSE.txt": "/webtool/static/js/2.daead919.chunk.js.LICENSE.txt",
     "static/media/Header.css": "/webtool/static/media/blue.c7bbde67.jpg",
     "static/media/logo.4bcce2b1.png": "/webtool/static/media/logo.4bcce2b1.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.ddf50861.js",
     "static/js/2.daead919.chunk.js",
-    "static/css/main.227a3cc3.chunk.css",
-    "static/js/main.ac74e4cc.chunk.js"
+    "static/css/main.10e7f106.chunk.css",
+    "static/js/main.8e8f691d.chunk.js"
   ]
 }
