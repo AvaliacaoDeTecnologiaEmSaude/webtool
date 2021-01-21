@@ -1,5 +1,6 @@
 import './styles/Setup.css';
 import './styles/App.css';
+import './styles/Header.css';
 import './styles/Score.css';
 import './styles/Footer.css';
 import './styles/MediaQueries.css';

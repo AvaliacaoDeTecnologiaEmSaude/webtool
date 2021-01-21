@@ -9,7 +9,7 @@ const Form = (props) => {
     
     return (
         <form>
-            <p><label htmlFor={props.label} className="formLabel">{props.name}</label>
+            <p><label htmlFor={props.label} className="formLabel">{props.cathegory} :: {props.name}</label>
             </p>
             {props.form.options.map((option) => {
                 return (
