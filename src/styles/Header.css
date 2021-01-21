@@ -32,3 +32,34 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.App-header a {
+    text-decoration: none;
+    color: black;
+}
+
+.App-header a:active, 
+.App-header a:hover,
+.loggedInMenu button:hover{
+    text-decoration: underline;
+}
+
+.loggedInMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+}
+
+.loggedInMenu li {
+    padding-left: 20px;
+}
+
+.loggedInMenu button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}

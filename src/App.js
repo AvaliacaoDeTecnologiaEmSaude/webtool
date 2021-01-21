@@ -6,17 +6,24 @@ import './styles/Footer.css';
 import './styles/MediaQueries.css';
 import './styles/Animations.css';
 
+//Authentication:
+import Login from './Login.js';
+import Preferences from './Preferences.js';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import React, { Component } from 'react';
 
 import Header from './Header.js';
 import Main from './Main.js';
 import Score from './Score.js';
+import Dashboard from './Dashboard.js';
 import Footer from './Footer.js';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      LoggedIn: false,
       Geral: [0],
       Resultado: [0],
       //PLACE TO ADD NEW DIMENSION
@@ -51,15 +58,62 @@ class App extends Component {
     });
   }
 
+  changeLogInState = (value) => {
+    this.setState({
+      LoggedIn: value,
+    })
+  }
+
+
   render() {
     return (
       <div className="App">
-        <Header />
-        <Score Geral={this.state.Geral}
-          Resultado={this.state.Resultado}
-          //PLACE TO ADD NEW DIMENSION
-        />
-        <Main changeScore={this.changeScore} />
+        <BrowserRouter>
+          <Switch>
+            <Route path="/dashboard">
+              <Header
+                LoggedIn={this.state.LoggedIn}
+                changeLogInState={this.changeLogInState}
+              />
+              <Dashboard />
+
+            </Route>
+            <Route path="/preferences">
+              <Header
+                LoggedIn={this.state.LoggedIn}
+              />
+              <Preferences />
+            </Route>
+            <Route path="/">
+              {this.state.LoggedIn ?
+                <fragment>
+                  <Header
+                    LoggedIn={this.state.LoggedIn}
+                    changeLogInState={this.changeLogInState}
+                  />
+                  <Score Geral={this.state.Geral}
+                    Resultado={this.state.Resultado}
+                  //PLACE TO ADD NEW DIMENSION
+                  />
+                  <Main changeScore={this.changeScore} />
+                </fragment> :
+                <fragment>
+                  <Header
+                    LoggedIn={this.state.LoggedIn}
+                    changeLogInState={this.changeLogInState}
+                  />
+                  
+                  <Login
+                    changeLogInState={this.changeLogInState}
+                  />
+                  
+                </fragment>}
+              
+
+            </Route>
+          </Switch>
+        </BrowserRouter>
+
         <Footer />
       </div>
     );

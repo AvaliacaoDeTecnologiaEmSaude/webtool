@@ -1,0 +1,30 @@
+.login-wrapper {
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: white;
+    min-height: calc( 100vh);
+}
+
+.login-wrapper h2{
+    padding-top: 20px;
+}
+
+.login-wrapper form{
+    /* margin: 0 auto; */
+    /* padding: 0; */
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.login-wrapper input{
+    margin-left: 10px;
+}
+
+.login-wrapper button {
+    padding: 10px;
+    margin-top: 20px;
+}

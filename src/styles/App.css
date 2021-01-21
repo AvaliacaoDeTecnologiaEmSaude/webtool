@@ -35,7 +35,9 @@ body {
 }
 
 
-.mainContent {
+.mainContent, 
+.dashboard,
+.preferences {
   padding-top: 250px;
   height: 80vh;
 }
