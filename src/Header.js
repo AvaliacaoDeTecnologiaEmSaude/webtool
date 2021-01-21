@@ -14,7 +14,7 @@ export default function Header(props) {
         <header className="App-header">
             <nav className="nav wrapper">
                 <ul>
-                    <Link to="/"><img src={logo} className="App-logo" alt="logo" /></Link>
+                    <Link to="/webtool"><img src={logo} className="App-logo" alt="logo" /></Link>
                     
                     {props.LoggedIn
                         && <div className="loggedInMenu">
