@@ -75,14 +75,24 @@ class App extends Component {
                 LoggedIn={this.state.LoggedIn}
                 changeLogInState={this.changeLogInState}
               />
-              <Dashboard />
+              {this.state.LoggedIn
+                ? <Dashboard />
+                : <Login
+                  changeLogInState={this.changeLogInState}
+                />
+              }
 
             </Route>
             <Route path="/preferences">
               <Header
                 LoggedIn={this.state.LoggedIn}
+                changeLogInState={this.changeLogInState}
               />
-              <Preferences />
+              {this.state.LoggedIn
+                ? <Preferences />
+                : <Login
+                  changeLogInState={this.changeLogInState}
+                />}
             </Route>
             <Route path="/">
               {this.state.LoggedIn ?
