@@ -14,10 +14,12 @@ const Score = (props) => {
     //PLACE TO ADD NEW DIMENSION
 
     let score = totalGeral + totalResultado;
-
+    if (score < 0) {
+        
+    }
     return (
         <div className="score">
-            <p>SCORE: {score}</p>
+            <p className={score >= 0 ? "goodScore" : "badScore"}>SCORE: {score}</p>
             <p>Geral: {totalGeral}</p>
             <p>Resultado: {totalResultado}</p>
             {/* PLACE TO ADD NEW DIMENSION: */}
