@@ -8,15 +8,15 @@ const allForms = [
         id: 0,
         options: [{
             name: 'Ensaio Randomizado Controlado',
-            value: '1',
+            value: '7',
         },
         {
             name: 'Ensaio Não Controlado',
-            value: '2',
+            value: '6',
             },
             {
                 name: 'Coorte Controlada',
-                value: '3',
+                value: '5',
             },
             {
                 name: 'Transversal',
@@ -24,15 +24,15 @@ const allForms = [
             },
             {
                 name: 'Caso - Controle',
-                value: '5',
+                value: '3',
             },
             {
                 name: 'Relato de Casos',
-                value: '6',
+                value: '2',
             },
             {
                 name: 'Publicação Opinativa / Não identificado',
-                value: '7',
+                value: '-10',
             }
             ]
     },
@@ -44,7 +44,7 @@ const allForms = [
         options: [
             {
                 name: 'Nenhum resultado estatisticamente significante',
-                value: '0',
+                value: '-10',
             },
             {
                 name: 'Desfecho substituto não clínico(ex.: taxa de resposta)',
@@ -68,7 +68,7 @@ const allForms = [
         options: [
             {
                 name: 'Ausente(HR > ou = 1)',
-                value: '0',
+                value: '-10',
             }, {
                 name: 'Presente, magnitude pequena(0, 7 < HR < 1)',
                 value: '1',
@@ -80,7 +80,7 @@ const allForms = [
                 value: '3',
             }, {
                 name: 'Informação ausente / não avaliado',
-                value: '4',
+                value: '-10',
             }]
     }
 
