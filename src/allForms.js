@@ -46,7 +46,7 @@ const allForms = [
                 name: 'Desfecho substituto não clínico(ex.: taxa de resposta)',
                 value: '1',
             }, {
-                name: 'Desfecho substituto clínico(ex.: PFS)',
+                name: 'Desfecho substituto clínico (ex.: PFS)',
                 value: '2',
             }, {
                 name: 'Desfecho duro(ex.: sobrevida global, qualidade de vida)',

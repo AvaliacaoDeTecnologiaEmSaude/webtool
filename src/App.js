@@ -15,13 +15,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '0',
+      value: 0,
     }
   }
 
-  changeScore(value) {
+  changeScore = (NewValue) => {
+    console.log('Value', NewValue);
+    console.log(this);
     this.setState({
-      value: this.state.value + value,
+      value: this.state.value+ parseInt(NewValue),
     })
   }
 

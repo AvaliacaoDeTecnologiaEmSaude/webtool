@@ -5,7 +5,12 @@ import allForms from './allForms.js';
 import Form from './Form.js';
 
 class Forms extends Component {
-   
+    constructor(props) {
+        super(props);
+        this.state = {
+            
+        }
+    }
 
     render() {
         return (
@@ -14,7 +19,7 @@ class Forms extends Component {
                     const label = form.label;
                     const name = form.name;
                     return (
-                        <Form form={form} label={label} name={name}/>
+                        <Form form={form} label={label} name={name} changeScore={this.props.changeScore}/>
                     )
                 })}
             </section>

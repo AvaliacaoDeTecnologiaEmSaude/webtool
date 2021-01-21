@@ -1,12 +1,12 @@
 //Main.js
 import Forms from './Forms.js';
 
-const Main = () => {
+const Main = (props) => {
     return (
     
     <main className="mainContent">
 
-        <Forms />
+            <Forms changeScore={props.changeScore}/>
 
     </main>
     )
