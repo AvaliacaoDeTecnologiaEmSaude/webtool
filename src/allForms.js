@@ -44,7 +44,7 @@ const allForms = [
         options: [
             {
                 name: 'Nenhum resultado estatisticamente significante',
-                value: '-10',
+                value: '-5',
             },
             {
                 name: 'Desfecho substituto não clínico(ex.: taxa de resposta)',
@@ -57,7 +57,7 @@ const allForms = [
                     value: '3',
             }, {
                 name: 'Informação ausente / Não avaliado',
-                value: '4',
+                value: '-10',
             }]
     },
     {
@@ -68,7 +68,7 @@ const allForms = [
         options: [
             {
                 name: 'Ausente(HR > ou = 1)',
-                value: '-10',
+                value: '-5',
             }, {
                 name: 'Presente, magnitude pequena(0, 7 < HR < 1)',
                 value: '1',
