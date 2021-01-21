@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/webtool/static/css/main.800aaaba.chunk.css",
-    "main.js": "/webtool/static/js/main.814ed0a8.chunk.js",
-    "main.js.map": "/webtool/static/js/main.814ed0a8.chunk.js.map",
+    "main.js": "/webtool/static/js/main.57f530fd.chunk.js",
+    "main.js.map": "/webtool/static/js/main.57f530fd.chunk.js.map",
     "runtime-main.js": "/webtool/static/js/runtime-main.ddf50861.js",
     "runtime-main.js.map": "/webtool/static/js/runtime-main.ddf50861.js.map",
     "static/js/2.daead919.chunk.js": "/webtool/static/js/2.daead919.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.ddf50861.js",
     "static/js/2.daead919.chunk.js",
     "static/css/main.800aaaba.chunk.css",
-    "static/js/main.814ed0a8.chunk.js"
+    "static/js/main.57f530fd.chunk.js"
   ]
 }
