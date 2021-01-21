@@ -42,7 +42,8 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
+  max-width: 1000px;
 }
 
 .forms {
@@ -57,7 +58,7 @@ body {
 form {
   margin: 10px auto;
   padding: 20px 30px;
-  width: 90%;
+  /* width: 90%; */
   box-shadow: 2px 2px gray;
 }
 

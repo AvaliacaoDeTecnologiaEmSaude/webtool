@@ -13,6 +13,7 @@ const Score = (props) => {
     let totalResultado = sumAll(props.Resultado);
     //PLACE TO ADD NEW DIMENSION
 
+    //PLACE TO ADD NEW DIMENSION
     let score = totalGeral + totalResultado;
     if (score < 0) {
         
