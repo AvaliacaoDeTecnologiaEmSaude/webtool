@@ -4,6 +4,8 @@ const allForms = [
     {
         name: 'Desenho de estudo',
         label: "desenhoDeEstudo",
+        cathegory: 'Geral',
+        id: 0,
         options: [{
             name: 'Ensaio Randomizado Controlado',
             value: '1',
@@ -36,6 +38,8 @@ const allForms = [
     },
     {
         name: 'Tipo de desfecho, que apresenta significância estatística, associado à intervenção / exposição',
+        cathegory: 'Resultado',
+        id: 0,
         label: 'desfecho',
         options: [
             {
@@ -59,6 +63,8 @@ const allForms = [
     {
         name: 'Magnitude do benefício clínico associado à intervenção/ exposição',
         label: 'beneficio',
+        cathegory: 'Resultado',
+        id: 1,
         options: [
             {
                 name: 'Ausente(HR > ou = 1)',

@@ -1,5 +1,6 @@
 import './styles/Setup.css';
 import './styles/App.css';
+import './styles/Score.css';
 import './styles/Footer.css';
 import './styles/MediaQueries.css';
 import './styles/Animations.css';
@@ -15,23 +16,42 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 0,
+        Geral: [0],
+        Resultado: [0],
     }
   }
 
-  changeScore = (NewValue) => {
-    console.log('Value', NewValue);
-    console.log(this);
+  changeScore = (newValue) => {
+    let v = newValue.split(",");
+    let type = v[0];
+    let id = parseInt(v[1]);
+    let value = parseInt(v[2]);
+    console.log('Type:', type, ' Id: ', id, ' Value:', value);
+    
+    let vG = this.state.Geral;
+    let vR = this.state.Resultado;
+
+    switch (type) {
+      case 'Geral':
+        vG[id] = value;
+        break;
+      case 'Resultado':
+        vR[id] = value;
+        break;
+
+    }
+    console.log('vG:', vG, 'vR:', vR);
     this.setState({
-      value: this.state.value+ parseInt(NewValue),
-    })
+      Geral: vG,
+      Resultado: vR,
+    });
   }
 
   render() {
     return (
       <div className="App">
         <Header />
-        <Score value={this.state.value} />
+        <Score Geral={this.state.Geral} Resultado={this.state.Resultado}/>
         <Main changeScore={this.changeScore}/>
         <Footer />
       </div>

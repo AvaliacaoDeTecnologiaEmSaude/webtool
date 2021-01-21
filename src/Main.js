@@ -3,12 +3,9 @@ import Forms from './Forms.js';
 
 const Main = (props) => {
     return (
-    
-    <main className="mainContent">
-
-            <Forms changeScore={props.changeScore}/>
-
-    </main>
+        <main className="mainContent">
+            <Forms changeScore={props.changeScore} />
+        </main>
     )
 }
 
