@@ -26,7 +26,6 @@ class App extends Component {
     let type = v[0];
     let id = parseInt(v[1]);
     let value = parseInt(v[2]);
-    console.log('Type:', type, ' Id: ', id, ' Value:', value);
     
     let vG = this.state.Geral;
     let vR = this.state.Resultado;
@@ -38,9 +37,10 @@ class App extends Component {
       case 'Resultado':
         vR[id] = value;
         break;
-
+      default:
+        break;
     }
-    console.log('vG:', vG, 'vR:', vR);
+    
     this.setState({
       Geral: vG,
       Resultado: vR,

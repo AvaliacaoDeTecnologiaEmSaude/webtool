@@ -1,19 +1,21 @@
 //Score.js
 
-const Score = (props) => {
-    let totalGeral = 0;
-    props.Geral.forEach(element => {
-        totalGeral += parseInt(element);
+function sumAll(array) {
+    let result = 0;
+    array.forEach(element => {
+        result += parseInt(element);
     });
+    return result;
+}
 
-    let totalResultado = 0;
-    props.Resultado.forEach(element => {
-        totalResultado += parseInt(element);
-    });
+const Score = (props) => {
+    let totalGeral = sumAll(props.Geral);
+    let totalResultado = sumAll(props.Resultado);
+    let score = totalGeral + totalResultado;
 
     return (
         <div className="score">
-            <p>SCORE: {totalGeral+totalResultado}</p>
+            <p>SCORE: {score}</p>
             <p>Geral: {totalGeral}</p>
             <p>Resultado: {totalResultado}</p>
         </div>

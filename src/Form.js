@@ -3,7 +3,7 @@
 const Form = (props) => {
 
     function changeScoreLocal(e) {
-        console.log(e.currentTarget);
+        // console.log(e.currentTarget);
         props.changeScore(e.currentTarget.value);
     }
     
